@@ -1,0 +1,30 @@
+import java.io.*;
+import java.util.*;
+
+public class Main {
+
+    public static void main(String[] args) throws Exception {
+     Scanner scn = new Scanner(System.in);
+     int n = scn.nextInt();
+     printIncreasing(n);
+
+    }
+
+    public static void printIncreasing(int n){
+       if(n == 0){
+     //basecase
+     return;
+
+       }
+
+           
+//faith print = 1,2,3,4 ...n
+printIncreasing(n-1);
+
+//meet expeactations with faith
+System.out.println(n);
+
+
+    }
+
+}
